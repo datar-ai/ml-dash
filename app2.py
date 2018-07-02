@@ -15,13 +15,13 @@ from dash.dependencies import Input, Output, State
 import pandas_datareader.data as web # requires v0.6.0 or later
 from datetime import datetime
 import pandas as pd
-import plotly.plotly as py
+# import plotly.plotly as py
 import plotly.graph_objs as go
 from plotly import tools
 
 import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.colors import ListedColormap
+# import matplotlib.pyplot as plt
+# from matplotlib.colors import ListedColormap
 from plotly.graph_objs import Figure
 
 from sklearn.model_selection import train_test_split
@@ -101,8 +101,8 @@ for ds_cnt, ds in enumerate(datasets):
                          np.arange(y_min, y_max, h))
 
     # just plot the dataset first
-    cm = plt.cm.RdBu
-    cm_bright = ListedColormap(['#FF0000', '#0000FF'])
+    # cm = plt.cm.RdBu
+    # cm_bright = ListedColormap(['#FF0000', '#0000FF'])
 
     # Plot the training points
     training_points = go.Scatter(x=X_train[:, 0], y=X_train[:, 1], showlegend=False,
