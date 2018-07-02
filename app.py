@@ -170,6 +170,7 @@ fig['layout'].update(height=2000)
 
 
 app = dash.Dash()
+server = app.server
 
 nsdq = pd.read_csv('./data/NASDAQcompanylist.csv')
 nsdq.set_index('Symbol', inplace=True)
