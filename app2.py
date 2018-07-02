@@ -58,7 +58,7 @@ def matplotlib_to_plotly(cmap, pl_entries):
 
 names = ["Input Data", "Nearest Neighbors", "Linear SVM",
          "RBF SVM", "Gaussian Process", "Decision Tree",
-         "Random Forest", "Neural Net", "AdaBoost",
+         "Random Forest", "AdaBoost",
          "Naive Bayes", "QDA"]
 
 classifiers = [
@@ -68,7 +68,6 @@ classifiers = [
     GaussianProcessClassifier(1.0 * RBF(1.0), warm_start=True),
     DecisionTreeClassifier(max_depth=5),
     RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1),
-    MLPClassifier(alpha=1),
     AdaBoostClassifier(),
     GaussianNB(),
     QuadraticDiscriminantAnalysis()]
